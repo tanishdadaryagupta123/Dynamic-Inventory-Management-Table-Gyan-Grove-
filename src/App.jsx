@@ -148,7 +148,7 @@ function App() {
       {/* Modal for Add/Edit */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-          <div className="bg-white rounded-lg p-8 max-w-md w-full shadow-lg">
+          <div className="bg-white rounded-lg p-9 max-w-md w-full shadow-lg">
             <h2 className="text-xl font-semibold mb-4 text-center">
               {editingItem ? "Edit Product" : "Add New Product"}
             </h2>
