@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "src": "/(.*)\\.jsx",
+      "headers": {
+        "Content-Type": "application/javascript"
+      },
+      "continue": true
+    }
+  ]
+} 
