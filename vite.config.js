@@ -10,5 +10,23 @@ export default defineConfig({
     headers: {
       'Content-Type': 'application/javascript'
     }
+  },
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+      },
+    },
+  },
+  esbuild: {
+    jsxInject: `import React from 'react'`,
+    loader: 'jsx',
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        '.js': 'jsx',
+      },
+    },
   }
 })
