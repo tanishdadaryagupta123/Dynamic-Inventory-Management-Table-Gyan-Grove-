@@ -1,1 +1,11 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent FOUC (Flash of Unstyled Content) */
+html {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Your custom styles below */
